@@ -46,15 +46,14 @@ class Mancala:
                 else:
                     self.board[nextPocket] = self.board[nextPocket] + 1
                 stones = stones - 1
-                #stealing mode
-                if nextPocket<6 and self.board[nextPocket]==1 and nextPocket!=6 and self.board[12-nextPocket]!=0\
-                        and stones == 0:
+           if nextPocket < 6 and self.board[nextPocket]==1 and nextPocket!=6 and self.board[12-nextPocket]!=0 \
+                    and stones==0:
                     self.board[6] = self.board[6] + 1 + self.board[12 - nextPocket]
                     self.board[nextPocket] = 0
                     self.board[12 - nextPocket] = 0
-                #end of stealing
-                if nextPocket==6 and stones==0:
-                    repeatTurn=True
+                # end of stealing
+           if nextPocket == 6 and stones == 0:
+                    repeatTurn = True
         return repeatTurn
 
     def gameWithoutStealing(self, currentPocket):
@@ -90,10 +89,10 @@ class Mancala:
                 else:
                     self.board[nextPocket] = self.board[nextPocket] + 1
                 stones = stones - 1
-                #stealing mode
-                #end od stealing
-                if nextPocket==6 and stones == 0:
-                    repeatTurn=True
+            # stealing mode
+            #end of stealing mode
+            if nextPocket == 6 and stones==0:
+                repeatTurn=True
         return repeatTurn
 
     def isGameEnd(self):

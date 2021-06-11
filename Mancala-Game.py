@@ -397,3 +397,4 @@ elif player == 2:
         stealing = int(input("To Enter Stealing mode WRITE 1 and to Enter Without Stealing mode WRITE 2 "))
 else:
     player = int(input("for human player play first ENTER 1, for AI BOT play first ENTER 2 "))
+    

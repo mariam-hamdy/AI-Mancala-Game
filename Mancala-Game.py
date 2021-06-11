@@ -257,7 +257,8 @@ if player == 1:
                     break
                 if chosenN > 5 or mancala.board[chosenN] == 0:
                     print("wrong number or empty pocket")
-                    break
+                    chosenN= int(input("write the number of pocket to play or -1 to quit the game "))
+                    #break
                 temp=mancala.game(chosenN)
                 mancala.printBoard()
                 if not temp:
@@ -294,7 +295,8 @@ if player == 1:
                     break
                 if chosenN > 5 or mancala.board[chosenN] == 0:
                     print("wrong number or empty pocket")
-                    break
+                    chosenN= int(input("write the number of pocket to play or -1 to quit the game "))
+                    #break
                 temp=mancala.gameWithoutStealing(chosenN)
                 mancala.printBoard()
                 if not temp:
@@ -347,7 +349,8 @@ elif player == 2:
                     break
                 if chosenN > 5 or mancala.board[chosenN] == 0:
                     print("wrong number or empty pocket")
-                    break
+                    chosenN= int(input("write the number of pocket to play or -1 to quit the game "))
+                    #break
                 temp=mancala.game(chosenN)
                 mancala.printBoard()
                 if not temp:
@@ -384,7 +387,8 @@ elif player == 2:
                     break
                 if chosenN > 5 or mancala.board[chosenN] == 0:
                     print("wrong number or empty pocket")
-                    break
+                    chosenN= int(input("write the number of pocket to play or -1 to quit the game "))
+                    #break
                 temp=mancala.gameWithoutStealing(chosenN)
                 mancala.printBoard()
                 if not temp:
